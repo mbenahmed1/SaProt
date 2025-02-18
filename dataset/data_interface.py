@@ -97,7 +97,7 @@ class DataInterface:
         Returns: Corresponding model
         """
 		sub_dirs = dataset_py_path.split(os.sep)
-		cmd = f"from {'.' + '.'.join(sub_dirs[:-1])} import {sub_dirs[-1]}"
+		cmd = f"from {'.'.join(sub_dirs[5:-1])} import {sub_dirs[-1]}"
 		exec(cmd)
 		
 		return now_cls(**kwargs)

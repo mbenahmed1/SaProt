@@ -3,12 +3,10 @@ import time
 import json
 import numpy as np
 import re
-import sys
 
 from Bio.PDB import PDBParser, MMCIFParser
 
 
-sys.path.append(".")
 
 
 # Get structural seqs from pdb file
