@@ -1,1 +1,0 @@
-# Place the huggingface version of SaProt model here
